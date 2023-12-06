@@ -1,0 +1,25 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJrYXRvcmoiLCJpYXQiOjE3MDE4NjY4NDgsImV4cCI6MTcwMTg3MDQ0OH0.4tnv6UoX4zGi7wDR2ylI52GSN-mrGq-4sZlLiXOYWUo
+#####
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"katorj"
+}
+
+############
+
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJrYXRvcmoiLCJpYXQiOjE3MDE4NjY4NDgsImV4cCI6MTcwMTg3NDA0OH0.3tHcnyUBwOuYW9cc5vp83DghKZxQdKfJaONgq0An_z4"
+}
+
+
+################
+
+DELETE http:// localhost:5000/logout
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJrYXRvcmoiLCJpYXQiOjE3MDE4NjY4NDgsImV4cCI6MTcwMTg3MDQ0OH0.4tnv6UoX4zGi7wDR2ylI52GSN-mrGq-4sZlLiXOYWUo
